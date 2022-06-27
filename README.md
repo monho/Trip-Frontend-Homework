@@ -10,20 +10,20 @@
 
 # GitHub Commit Rule
 > 문서/코드등 추가 :[Add]
-[Add] React project Repository 
-[Add] UserSearch for From
+>[Add] React project Repository 
+>[Add] UserSearch for From
 
-소스 수정:[Update]
-
-
-소스 삭제:[Rm]
-[Rm] Span tag from Footer 
-
-무언가를 사용했을때 :[Use]
-[Use] antd for input design
+>소스 수정:[Update]
 
 
-무언가를 고칠떄:[Fix]
-[Fix] userino page match history area
+>소스 삭제:[Rm]
+>[Rm] Span tag from Footer 
+
+>무언가를 사용했을때 :[Use]
+>[Use] antd for input design
+
+
+>무언가를 고칠떄:[Fix]
+>[Fix] userino page match history area
 
 
