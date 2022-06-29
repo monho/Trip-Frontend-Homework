@@ -15,8 +15,7 @@ const Contents = () => {
         margin: 0 auto;
         width: 1040px;
         display: flex;
-        
-    `; 
+    `;  
 
     return(
         <MainSection>

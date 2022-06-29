@@ -11,11 +11,13 @@ const RightSection = () => {
         margin-bottom: 0px;
     `
     const TextItem = styled.li`
+        margin-bottom: 15px;
         list-style: none;
         font-size: 36px;
+        letter-spacing: -1px;
     `
     const RightImgArea = styled.div`
-        width: 415px;
+        width: 450px;
         margin-top: 50px;
         padding-left: 40px;
         display: flex;
@@ -31,7 +33,7 @@ const RightSection = () => {
         padding: 5px 0px 5px 5px;
     `
     const Text = styled.p`
-        margin: 0px 0px 3px 0px;
+        margin: 0px 0px 4px 0px;
         font-size: 14px;
         font-weight: bold;
         color: rgba(58, 58, 58, 0.8);
