@@ -1,14 +1,51 @@
-import React from 'react'; // import 로 useState 를 불러온다!
-import styled from 'styled-components';
+import React from 'react'; 
+import styled , {keyframes} from 'styled-components';
 import FirstMedalIcon from "../../assets/img/play-store2x.png";
 import SecondAppleIcon from "../../assets/img/badge-apple4x.png";
 const RightSection = () => {
     
+    const boxFade = keyframes`
+          0% {
+            opacity: 0;
+            duration:700ms;
+            transform: translate3d(0, 10%, 0);
+        }
+        25%{
+            opacity: 0;
+            duration:700ms;
+            transform: translate3d(0, 10%, 0);
+        }
+        to {
+            opacity: 1;
+            duration:700ms;
+            transform: translateZ(0);
+        }
+    `;
+
+const medalFade = keyframes`
+0% {
+  opacity: 0;
+  duration:700ms;
+  transform: translate3d(0, 10%, 0);
+}
+25%{
+  opacity: 0;
+  duration:700ms;
+  transform: translate3d(0, 10%, 0);
+}
+to {
+  opacity: 1;
+  transform: translateZ(0);
+}
+`;
+
     const RightArticle = styled.article`
         margin: 0 0 0 225px;
     `
     const TestList = styled.ul`
         margin-bottom: 0px;
+        animation-duration: 700ms;
+        animation:${boxFade} 1.5s; //1초동안 선형 무한 속성값주기
     `
     const TextItem = styled.li`
         margin-bottom: 15px;
@@ -21,6 +58,7 @@ const RightSection = () => {
         margin-top: 50px;
         padding-left: 40px;
         display: flex;
+        animation:${medalFade} 1.5s
     `
     const FirstIconArea = styled.div`
 
