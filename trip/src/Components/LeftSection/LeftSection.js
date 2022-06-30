@@ -4,18 +4,17 @@ import TripLogoimg from "../../assets/img/triple2x.png";
 
 const LeftSection = () => {
 
+    const boxFade = keyframes`
+          0% {
+            opacity: 0;
+            transform: translate3d(0, 20%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    `;
 
-const animation = keyframes`
-0% {
-  transform: translateY(0);
-}
-50% {
-    transform: translateY(0);
-}
-100%{
-    transform: translateY(-15px);
-}
-`;
     const LeffArticle = styled.article`
         display: flex;
         flex-direction: column;
@@ -24,7 +23,7 @@ const animation = keyframes`
     const TripLogo = styled.img`
         width: 400px;
         height: 338px;
-        animation:${animation} 1s ease; //1초동안 선형 무한 속성값주기
+        animation:${boxFade} 2s; //1초동안 선형 무한 속성값주기
         
     `
     const TextArea = styled.article`
