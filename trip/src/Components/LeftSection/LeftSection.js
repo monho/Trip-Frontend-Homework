@@ -36,6 +36,7 @@ const LeftSection = () => {
     const TripLogo = styled.img`
         width: 400px;
         height: 338px;
+        animation-duration: 700ms;
         animation:${boxFade} 1.5s; //1초동안 선형 무한 속성값주기
         
     `;
@@ -43,8 +44,9 @@ const LeftSection = () => {
         width: 400px;
         text-align: center;
         position: absolute;
-        top: 41%;
-        animation:${Textfade} 1.5s; //1초동안 선형 무한 속성값주기
+        top: 38%;
+        animation-duration: 700ms;
+        animation:${Textfade} 1.6s; //1초동안 선형 무한 속성값주기
         font-size: 15px;
         color: rgba(58, 58, 58, 0.7);
     `;

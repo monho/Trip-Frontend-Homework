@@ -1,43 +1,41 @@
-import React from 'react'; 
+import { useEffect, useState } from 'react'
 import styled , {keyframes} from 'styled-components';
 import FirstMedalIcon from "../../assets/img/play-store2x.png";
 import SecondAppleIcon from "../../assets/img/badge-apple4x.png";
 const RightSection = () => {
-    
+    const [count, setCount] = useState(0);
+
+
     const boxFade = keyframes`
           0% {
             opacity: 0;
-            duration:700ms;
             transform: translate3d(0, 10%, 0);
         }
         25%{
             opacity: 0;
-            duration:700ms;
             transform: translate3d(0, 10%, 0);
         }
         to {
             opacity: 1;
-            duration:700ms;
             transform: translateZ(0);
         }
     `;
 
-const medalFade = keyframes`
-0% {
-  opacity: 0;
-  duration:700ms;
-  transform: translate3d(0, 10%, 0);
-}
-25%{
-  opacity: 0;
-  duration:700ms;
-  transform: translate3d(0, 10%, 0);
-}
-to {
-  opacity: 1;
-  transform: translateZ(0);
-}
-`;
+        const medalFade = keyframes`
+        0% {
+        opacity: 0;
+        transform: translate3d(0, 50%, 0);
+        }
+        25%{
+        opacity: 0;
+        duration:700ms;
+        transform: translate3d(0, 50%, 0);
+        }
+        to {
+        opacity: 1;
+        transform: translateZ(0);
+        }
+        `;
 
     const RightArticle = styled.article`
         margin: 0 0 0 225px;
@@ -45,7 +43,7 @@ to {
     const TestList = styled.ul`
         margin-bottom: 0px;
         animation-duration: 700ms;
-        animation:${boxFade} 1.5s; //1초동안 선형 무한 속성값주기
+        animation:${boxFade} 1.7s; //1초동안 선형 무한 속성값주기
     `
     const TextItem = styled.li`
         margin-bottom: 15px;
@@ -58,7 +56,8 @@ to {
         margin-top: 50px;
         padding-left: 40px;
         display: flex;
-        animation:${medalFade} 1.5s
+        animation-duration: 700ms;
+        animation:${medalFade} 1.8s;
     `
     const FirstIconArea = styled.div`
 
@@ -83,20 +82,20 @@ to {
     const SecondIcon = styled.img`
         width: 54px;
     `
-        const SecontTextArea = styled.div`
+    const SecontTextArea = styled.div`
         padding: 5px 0px 5px 5px;
     `
     return(
         <RightArticle>
             <TestList>
                 <TextItem>
-                    <strong>700만 명</strong>의 여행자
+                    <strong>{count}만 명</strong>의 여행자
                 </TextItem>
                 <TextItem>
-                    <strong>100만 개</strong>의 여행 리뷰
+                    <strong>{count}만 개</strong>의 여행 리뷰
                 </TextItem>
                 <TextItem>
-                    <strong>470만 개</strong>의 여행 일정
+                    <strong>{count}만 개</strong>의 여행 일정
                 </TextItem>
             </TestList>
             <RightImgArea>
