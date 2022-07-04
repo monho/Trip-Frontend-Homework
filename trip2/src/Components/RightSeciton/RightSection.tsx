@@ -3,8 +3,6 @@ import styled , {keyframes} from 'styled-components';
 import FirstMedalIcon from "../../assets/img/play-store2x.png";
 import SecondAppleIcon from "../../assets/img/badge-apple4x.png";
 const RightSection = () => {
-    const [count, setCount] = useState(0);
-
 
     const boxFade = keyframes`
           0% {
@@ -89,13 +87,13 @@ const RightSection = () => {
         <RightArticle>
             <TestList>
                 <TextItem>
-                    <strong>{count}만 명</strong>의 여행자
+                    <strong>700만 명</strong>의 여행자
                 </TextItem>
                 <TextItem>
-                    <strong>{count}만 개</strong>의 여행 리뷰
+                    <strong>100만 개</strong>의 여행 리뷰
                 </TextItem>
                 <TextItem>
-                    <strong>{count}만 개</strong>의 여행 일정
+                    <strong>450만 개</strong>의 여행 일정
                 </TextItem>
             </TestList>
             <RightImgArea>
